@@ -1,0 +1,24 @@
+
+curl http://localhost:8888/api/profile/add_user_data -d '{"uid":"10001","name":"zdking001","icon":"http://dfs.test.com/001.jpg"}'
+curl http://localhost:8888/api/profile/add_user_data -d '{"uid":"10002","name":"zdking002","icon":"http://dfs.test.com/002.jpg"}'
+curl http://localhost:8888/api/profile/add_user_data -d '{"uid":"10003","name":"zdking003","icon":"http://dfs.test.com/003.jpg"}'
+curl http://localhost:8888/api/profile/add_user_data -d '{"uid":"10004","name":"zdking004","icon":"http://dfs.test.com/004.jpg"}'
+curl http://localhost:8888/api/profile/add_user_data -d '{"uid":"10005","name":"zdking005","icon":"http://dfs.test.com/005.jpg"}'
+curl http://localhost:8888/api/profile/add_user_data -d '{"uid":"10006","name":"zdking006","icon":"http://dfs.test.com/006.jpg"}'
+curl http://localhost:8888/api/profile/add_user_data -d '{"uid":"10007","name":"zdking007","icon":"http://dfs.test.com/007.jpg"}'
+curl http://localhost:8888/api/profile/add_user_data -d '{"uid":"10008","name":"zdking008","icon":"http://dfs.test.com/008.jpg"}'
+curl http://localhost:8888/api/profile/add_user_data -d '{"uid":"10009","name":"zdking009","icon":"http://dfs.test.com/009.jpg"}'
+
+
+curl http://localhost:8888/api/profile/delete_user_data -d '{"uid":"10007"}'
+curl http://localhost:8888/api/profile/get_user_data -d '{"uid":"10007"}'
+curl http://localhost:8888/api/profile/get_user_data -d '{"uid":"10006"}'
+
+curl http://localhost:8888/api/feed/follow -d '{"uid":"10003","follow_uid":"10001"}'
+curl http://localhost:8888/api/feed/follow -d '{"uid":"10003","follow_uid":"10004"}'
+curl http://localhost:8888/api/feed/follow -d '{"uid":"10003","follow_uid":"10008"}'
+
+curl http://localhost:8888/api/feed/unfollow -d '{"uid":"10004","follow_uid":"10006"}'
+curl http://localhost:8888/api/repository/create_repository -d '{"uid":"10004","name":"zdking04 first repo"}'
+
+curl http://localhost:8888/api/feed/get_feed -d '{"uid":"10003","cursor":null}'
