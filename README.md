@@ -99,5 +99,16 @@ Each timeline has format like this:
 }
 ```
 
+#### Repository
+
+create repository
+* api_url: `api/repository/create_repository`
+* body: {"uid":"10002", "name": "xxxxx"}
+* responce: {"rid": "10002.xxxxx"}
+
+create fork
+* api_url: `api/repository/create_fork`
+* body: {"uid":"10003", "rid": "10002.xxxxx"}
+* responce: {"rid": "10003.xxx"}
 
 
