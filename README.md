@@ -6,8 +6,9 @@
 1. install python3, redis
 2. pip3 install redis, tornado
 
-## Run
+## Run & Test
 1. python main.py
+2. run cmd in TEST_CMDS
 
 ## Apis
 
@@ -67,10 +68,15 @@ Each timeline has format like this:
         "feed_id": "10002.qWqxg0Moew89snLa", 
         "timestamp": 1589084823744, 
         "type": "push_commits", 
-        "uid": "10002", 
-        "data": feed_data
+        "uid": "10001", 
+        "data": {"follow_uid": "10003"}
     }
-]
+    "follow": {
+        "uid":"10003", 
+        "name":"zdking03", 
+        "icon": "http://fs.test.com/003.jpg"
+    }
+}
 ```
 
 
